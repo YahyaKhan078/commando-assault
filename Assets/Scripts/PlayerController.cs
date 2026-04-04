@@ -37,6 +37,8 @@ public class PlayerController : MonoBehaviour
         HandleBetterGravity();
         HandleShooting();
         HandleAllyDeploy(); // ADD THIS LINE
+        Debug.Log("isGrounded: " + isGrounded + " | GroundCheck Y: " + groundCheck.position.y);
+        // ... rest of your Update
     }
 
     void HandleAllyDeploy()
@@ -55,6 +57,10 @@ public class PlayerController : MonoBehaviour
             groundCheckRadius,
             groundLayer
         );
+
+        // ADD THIS LINE — shows green if grounded, red if not
+        Debug.DrawRay(groundCheck.position, Vector2.down * 0.1f,
+            isGrounded ? Color.green : Color.red);
     }
 
     void HandleMovement()

@@ -1,0 +1,899 @@
+fileFormatVersion: 2
+guid: 709c89e6617c6d24388d06f564b829ff
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6142840338517246933
+    second: Futuristic_soldier_transparent_0
+  - first:
+      213: 2596107773026257569
+    second: Futuristic_soldier_transparent_1
+  - first:
+      213: -5774430639812920952
+    second: Futuristic_soldier_transparent_2
+  - first:
+      213: -6405394438381626621
+    second: Futuristic_soldier_transparent_3
+  - first:
+      213: -5756388881302882053
+    second: Futuristic_soldier_transparent_4
+  - first:
+      213: -4997986605107675214
+    second: Futuristic_soldier_transparent_5
+  - first:
+      213: -4931704504056417419
+    second: Futuristic_soldier_transparent_6
+  - first:
+      213: -7214644280334203207
+    second: Futuristic_soldier_transparent_7
+  - first:
+      213: 7243377553501230954
+    second: Futuristic_soldier_transparent_8
+  - first:
+      213: -8959525025031155482
+    second: Futuristic_soldier_transparent_9
+  - first:
+      213: -6509776608587837998
+    second: Futuristic_soldier_transparent_10
+  - first:
+      213: -7364478868449955654
+    second: Futuristic_soldier_transparent_11
+  - first:
+      213: 4613131626169376383
+    second: Futuristic_soldier_transparent_12
+  - first:
+      213: 8722830433551369768
+    second: Futuristic_soldier_transparent_13
+  - first:
+      213: -2463381592995623553
+    second: Futuristic_soldier_transparent_14
+  - first:
+      213: 7810707601556166857
+    second: Futuristic_soldier_transparent_15
+  - first:
+      213: -2956900594555001671
+    second: Futuristic_soldier_transparent_16
+  - first:
+      213: -5016674411988591551
+    second: Futuristic_soldier_transparent_17
+  - first:
+      213: 5368836986956825459
+    second: Futuristic_soldier_transparent_18
+  - first:
+      213: -3632193403370872518
+    second: Futuristic_soldier_transparent_19
+  - first:
+      213: 1419262545300298624
+    second: Futuristic_soldier_transparent_20
+  - first:
+      213: -2249284207522052108
+    second: Futuristic_soldier_transparent_21
+  - first:
+      213: 818085790746906359
+    second: Futuristic_soldier_transparent_22
+  - first:
+      213: -6661297784806260730
+    second: Futuristic_soldier_transparent_23
+  - first:
+      213: 8217759144927993209
+    second: Futuristic_soldier_transparent_24
+  - first:
+      213: 7315753089312637521
+    second: Futuristic_soldier_transparent_25
+  - first:
+      213: -8953911636294758147
+    second: Futuristic_soldier_transparent_26
+  - first:
+      213: -9078760005041088421
+    second: Futuristic_soldier_transparent_27
+  - first:
+      213: 3011808324804078655
+    second: Futuristic_soldier_transparent_28
+  - first:
+      213: 3901058322087588407
+    second: Futuristic_soldier_transparent_29
+  - first:
+      213: 658868854529002255
+    second: Futuristic_soldier_transparent_30
+  - first:
+      213: -2765464789717949224
+    second: Futuristic_soldier_transparent_31
+  - first:
+      213: -5123687876002462698
+    second: Futuristic_soldier_transparent_32
+  - first:
+      213: -5993696590642323993
+    second: Futuristic_soldier_transparent_33
+  - first:
+      213: -5378300143531864763
+    second: Futuristic_soldier_transparent_34
+  - first:
+      213: 6489402176417788050
+    second: Futuristic_soldier_transparent_35
+  - first:
+      213: 3822236731317465244
+    second: Futuristic_soldier_transparent_36
+  - first:
+      213: 6585041027527398099
+    second: Futuristic_soldier_transparent_37
+  - first:
+      213: -1067684573383182101
+    second: Futuristic_soldier_transparent_38
+  - first:
+      213: 4280934876051778479
+    second: Futuristic_soldier_transparent_39
+  - first:
+      213: 5294274041782290281
+    second: Futuristic_soldier_transparent_40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Futuristic_soldier_transparent_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 210
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d3c241edb0cf3550800000000000000
+      internalID: 6142840338517246933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Futuristic_soldier_transparent_1
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 768
+        width: 210
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aa4cd9c34a370420800000000000000
+      internalID: 2596107773026257569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Futuristic_soldier_transparent_2
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 768
+        width: 210
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 889b1d56de91ddfa0800000000000000
+      internalID: -5774430639812920952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Futuristic_soldier_transparent_3
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 768
+        width: 210
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30b100e02b77b17a0800000000000000
+      internalID: -6405394438381626621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Futuristic_soldier_transparent_4
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 768
+        width: 210
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf8fee4afc23d10b0800000000000000
+      internalID: -5756388881302882053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Futuristic_soldier_transparent_5
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 768
+        width: 210
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bf7562c9a593aab0800000000000000
+      internalID: -4997986605107675214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Futuristic_soldier_transparent_6
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 768
+        width: 210
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 573f58202e01f8bb0800000000000000
+      internalID: -4931704504056417419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Futuristic_soldier_transparent_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 210
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b640e9704f60eb90800000000000000
+      internalID: -7214644280334203207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Futuristic_soldier_transparent_8
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 512
+        width: 210
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a679a720285a58460800000000000000
+      internalID: 7243377553501230954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Futuristic_soldier_transparent_9
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 512
+        width: 210
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e09bc6957f59a380800000000000000
+      internalID: -8959525025031155482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Futuristic_soldier_transparent_10
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 512
+        width: 210
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dd89fd2aa0a8a5a0800000000000000
+      internalID: -6509776608587837998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Futuristic_soldier_transparent_11
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 512
+        width: 210
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab07b22ec7d1cc990800000000000000
+      internalID: -7364478868449955654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Futuristic_soldier_transparent_12
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 512
+        width: 210
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7e12f7c5c2250040800000000000000
+      internalID: 4613131626169376383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Futuristic_soldier_transparent_13
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 512
+        width: 210
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 826cbc35018bd0970800000000000000
+      internalID: 8722830433551369768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Futuristic_soldier_transparent_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 210
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7d82432e7f40ddd0800000000000000
+      internalID: -2463381592995623553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Futuristic_soldier_transparent_15
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 256
+        width: 210
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c8d2334e25356c60800000000000000
+      internalID: 7810707601556166857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Futuristic_soldier_transparent_16
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 256
+        width: 210
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b46869539af6f6d0800000000000000
+      internalID: -2956900594555001671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Futuristic_soldier_transparent_17
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 256
+        width: 210
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14cd0a7a331316ab0800000000000000
+      internalID: -5016674411988591551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Futuristic_soldier_transparent_18
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 256
+        width: 210
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3734a885bc0f18a40800000000000000
+      internalID: 5368836986956825459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Futuristic_soldier_transparent_19
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 256
+        width: 210
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a31ef84085bd79dc0800000000000000
+      internalID: -3632193403370872518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Futuristic_soldier_transparent_20
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 256
+        width: 210
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08b14afe3cb32b310800000000000000
+      internalID: 1419262545300298624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Futuristic_soldier_transparent_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 210
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f780c33eefe8c0e0800000000000000
+      internalID: -2249284207522052108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Futuristic_soldier_transparent_22
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
+        width: 210
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fe834931bc6a5b00800000000000000
+      internalID: 818085790746906359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Futuristic_soldier_transparent_23
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 0
+        width: 210
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 600c68135f05e83a0800000000000000
+      internalID: -6661297784806260730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Futuristic_soldier_transparent_24
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 0
+        width: 210
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97d962b17685b0270800000000000000
+      internalID: 8217759144927993209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Futuristic_soldier_transparent_25
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 210
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15242f89ca6c68560800000000000000
+      internalID: 7315753089312637521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Futuristic_soldier_transparent_26
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 0
+        width: 210
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df01a608ec05db380800000000000000
+      internalID: -8953911636294758147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Futuristic_soldier_transparent_27
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 0
+        width: 210
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b58908270e3c10280800000000000000
+      internalID: -9078760005041088421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 447736d4eee49d94eaf7ca6e3a62b2ee
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":210.0,"y":256.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Futuristic_soldier_transparent_0: 6142840338517246933
+      Futuristic_soldier_transparent_1: 2596107773026257569
+      Futuristic_soldier_transparent_10: -6509776608587837998
+      Futuristic_soldier_transparent_11: -7364478868449955654
+      Futuristic_soldier_transparent_12: 4613131626169376383
+      Futuristic_soldier_transparent_13: 8722830433551369768
+      Futuristic_soldier_transparent_14: -2463381592995623553
+      Futuristic_soldier_transparent_15: 7810707601556166857
+      Futuristic_soldier_transparent_16: -2956900594555001671
+      Futuristic_soldier_transparent_17: -5016674411988591551
+      Futuristic_soldier_transparent_18: 5368836986956825459
+      Futuristic_soldier_transparent_19: -3632193403370872518
+      Futuristic_soldier_transparent_2: -5774430639812920952
+      Futuristic_soldier_transparent_20: 1419262545300298624
+      Futuristic_soldier_transparent_21: -2249284207522052108
+      Futuristic_soldier_transparent_22: 818085790746906359
+      Futuristic_soldier_transparent_23: -6661297784806260730
+      Futuristic_soldier_transparent_24: 8217759144927993209
+      Futuristic_soldier_transparent_25: 7315753089312637521
+      Futuristic_soldier_transparent_26: -8953911636294758147
+      Futuristic_soldier_transparent_27: -9078760005041088421
+      Futuristic_soldier_transparent_3: -6405394438381626621
+      Futuristic_soldier_transparent_4: -5756388881302882053
+      Futuristic_soldier_transparent_5: -4997986605107675214
+      Futuristic_soldier_transparent_6: -4931704504056417419
+      Futuristic_soldier_transparent_7: -7214644280334203207
+      Futuristic_soldier_transparent_8: 7243377553501230954
+      Futuristic_soldier_transparent_9: -8959525025031155482
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
