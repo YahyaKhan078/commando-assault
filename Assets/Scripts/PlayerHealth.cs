@@ -17,16 +17,18 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(int amount)
     {
         currentHealth -= amount;
-
-        // Prevent health from going below 0
         if (currentHealth < 0) currentHealth = 0;
 
         UpdateHPUI();
 
+        // Camera shake on hit
+        if (CameraShake.instance != null)
+            CameraShake.instance.Shake(0.2f, 0.15f);
+        // Add this line after the camera shake line:
+        if (ScreenEffects.instance != null)
+            ScreenEffects.instance.FlashRed();
         if (currentHealth <= 0)
-        {
             GameManager.instance.LoseGame();
-        }
     }
 
     // New method to heal the player (for those future loot drops!)

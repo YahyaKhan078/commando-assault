@@ -101,21 +101,57 @@ public class PlayerController : MonoBehaviour
 
     void HandleShooting()
     {
-        if (Mouse.current.leftButton.isPressed && Time.time > nextFireTime)
+        if (GunManager.instance == null) return;
+        if (!GunManager.instance.HasAmmo()) return;
+
+        if (Mouse.current.leftButton.isPressed &&
+            Time.time > nextFireTime)
         {
-            nextFireTime = Time.time + fireRate;
+            nextFireTime = Time.time + GunManager.instance.GetFireRate();
 
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(
                 Mouse.current.position.ReadValue()
             );
-            Vector2 direction = (mousePos - (Vector2)transform.position);
+            Vector2 direction = (mousePos - (Vector2)transform.position).normalized;
 
-            GameObject bullet = Instantiate(
-                bulletPrefab,
-                transform.position + Vector3.right * 0.5f,
-                Quaternion.identity
-            );
-            bullet.GetComponent<BulletController>().SetDirection(direction);
+            // Flip player to face shoot direction
+            if (direction.x < 0)
+                transform.localScale = new Vector3(-0.5f, 0.5f, 1f);
+            else
+                transform.localScale = new Vector3(0.5f, 0.5f, 1f);
+
+            // Spawn bullets (shotgun fires multiple)
+            int bulletCount = GunManager.instance.GetBulletCount();
+            float spread = GunManager.instance.GetSpread();
+
+            for (int i = 0; i < bulletCount; i++)
+            {
+                // Calculate spread angle for each bullet
+                float angle = 0f;
+                if (bulletCount > 1)
+                    angle = -spread + (spread * 2f / (bulletCount - 1)) * i;
+
+                Vector2 spreadDir = RotateVector(direction, angle);
+                Vector3 spawnPos = transform.position + (Vector3)(direction * 0.6f);
+
+                GameObject bullet = Instantiate(bulletPrefab, spawnPos,
+                                                Quaternion.identity);
+                BulletController bc = bullet.GetComponent<BulletController>();
+                bc.SetDirection(spreadDir);
+                bc.damage = GunManager.instance.GetDamage();
+            }
+
+            GunManager.instance.UseAmmo();
         }
+    }
+
+    // Helper to rotate a vector by degrees
+    Vector2 RotateVector(Vector2 v, float degrees)
+    {
+        float rad = degrees * Mathf.Deg2Rad;
+        return new Vector2(
+            v.x * Mathf.Cos(rad) - v.y * Mathf.Sin(rad),
+            v.x * Mathf.Sin(rad) + v.y * Mathf.Cos(rad)
+        );
     }
 }

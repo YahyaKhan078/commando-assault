@@ -6,9 +6,14 @@ public class EnemyController : MonoBehaviour
     public int health = 3;
     public int damageToBase = 10;
 
-    private PlayerBase playerBase;
-    private bool isDead = false; // prevent double-kill
+    public GameObject explosionPrefab;
 
+    // ADD THESE TWO:
+    public GameObject healthPickupPrefab;
+    public GameObject ammoPickupPrefab;
+
+    private PlayerBase playerBase;
+    private bool isDead = false;
     private Rigidbody2D rb;
 
     void Start()
@@ -20,12 +25,7 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         rb.linearVelocity = new Vector2(-speed, rb.linearVelocity.y);
-
-        // If enemy walks off screen left, count them as dead
-        if (transform.position.x < -15f)
-        {
-            Die();
-        }
+        if (transform.position.x < -15f) Die();
     }
 
     public void TakeDamage(int damage)
@@ -40,11 +40,27 @@ public class EnemyController : MonoBehaviour
         if (isDead) return;
         isDead = true;
 
+        // Explosion effect
+        if (explosionPrefab != null)
+            Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+
+        // Track kills for pickup drops
+        if (ScoreManager.instance != null)
+            ScoreManager.instance.AddScore(100);
+
         WaveManager wm = FindAnyObjectByType<WaveManager>();
         if (wm != null) wm.EnemyDied();
 
-        if (ScoreManager.instance != null)
-            ScoreManager.instance.AddScore(100);
+        // DROP PICKUP — only every N kills based on difficulty
+        // Easy=10, Medium=15, Hard=30
+        int[] killsNeeded = { 10, 15, 30 };
+        int diff = Mathf.Clamp(MainMenuController.difficulty - 1, 0, 2);
+        int threshold = killsNeeded[diff];
+
+        PickupDropManager.instance?.TryDropPickup(
+            transform.position, threshold,
+            healthPickupPrefab, ammoPickupPrefab
+        );
 
         Destroy(gameObject);
     }
@@ -52,14 +68,13 @@ public class EnemyController : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         if (isDead) return;
-
         int diff = MainMenuController.difficulty;
 
         if (other.CompareTag("PlayerBase"))
         {
             if (playerBase != null)
                 playerBase.TakeDamage(damageToBase * diff);
-            Die(); // use Die() everywhere — handles EnemyDied automatically
+            Die();
         }
 
         if (other.CompareTag("Player"))

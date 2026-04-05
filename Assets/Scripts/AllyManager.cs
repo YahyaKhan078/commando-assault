@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using System.Collections;
 
 public class AllyManager : MonoBehaviour
 {
@@ -7,20 +8,21 @@ public class AllyManager : MonoBehaviour
 
     [Header("Ally Settings")]
     public GameObject allyPrefab;
-    public Transform playerTransform;   // spawn ally at player position
+    public Transform playerTransform;
     public int allyCost = 500;
 
     [Header("UI")]
-    public TextMeshProUGUI deployText;  // "DEPLOY [SPACE] - 500pts"
+    public TextMeshProUGUI deployText;      // small persistent top text
+    public TextMeshProUGUI deployAlertText; // big flash alert in center
 
-    void Awake()
-    {
-        instance = this;
-    }
+    private bool alertShownThisThreshold = false;
+
+    void Awake() { instance = this; }
 
     void Update()
     {
         UpdateDeployUI();
+        CheckDeployAlert();
     }
 
     void UpdateDeployUI()
@@ -32,15 +34,51 @@ public class AllyManager : MonoBehaviour
 
         if (score >= allyCost)
         {
-            // Make sure this says F not Space
-            deployText.text = "[ F ] DEPLOY ALLY - 500pts";
+            deployText.text = "[ F ] DEPLOY ALLY";
             deployText.color = Color.green;
         }
         else
         {
-            deployText.text = "[ F ] DEPLOY ALLY - 500pts";
-            deployText.color = new Color(1f, 1f, 1f, 0.3f);
+            deployText.text = "[ F ] DEPLOY ALLY - " + allyCost + "pts";
+            deployText.color = new Color(1f, 1f, 1f, 0.4f);
         }
+    }
+
+    void CheckDeployAlert()
+    {
+        if (ScoreManager.instance == null) return;
+        int score = ScoreManager.instance.GetScore();
+
+        // Show alert exactly once when score crosses 500
+        if (score >= allyCost && !alertShownThisThreshold)
+        {
+            alertShownThisThreshold = true;
+            StartCoroutine(ShowDeployAlert());
+        }
+
+        // Reset so it can flash again next time score 
+        // drops below (e.g. after spending)
+        if (score < allyCost)
+            alertShownThisThreshold = false;
+    }
+
+    IEnumerator ShowDeployAlert()
+    {
+        if (deployAlertText == null) yield break;
+
+        deployAlertText.gameObject.SetActive(true);
+        deployAlertText.text = "[ F ] DEPLOY ALLY!";
+
+        // Flash green 3 times over 2.5 seconds
+        for (int i = 0; i < 3; i++)
+        {
+            deployAlertText.color = Color.green;
+            yield return new WaitForSeconds(0.4f);
+            deployAlertText.color = new Color(0f, 1f, 0f, 0.2f);
+            yield return new WaitForSeconds(0.4f);
+        }
+
+        deployAlertText.gameObject.SetActive(false);
     }
 
     public void TryDeployAlly()
@@ -48,31 +86,28 @@ public class AllyManager : MonoBehaviour
         if (ScoreManager.instance == null) return;
 
         int score = ScoreManager.instance.GetScore();
-
         if (score < allyCost)
         {
-            // Flash the text red briefly to show "can't afford"
             StartCoroutine(FlashCantAfford());
             return;
         }
 
-        // Deduct score and spawn
         ScoreManager.instance.SpendScore(allyCost);
+        alertShownThisThreshold = false; // reset for next time
 
         Vector3 spawnPos = new Vector3(
-            playerTransform.position.x + 1f, // slightly ahead of player
+            playerTransform.position.x + 1f,
             playerTransform.position.y,
             0
         );
-
         Instantiate(allyPrefab, spawnPos, Quaternion.identity);
     }
 
-    System.Collections.IEnumerator FlashCantAfford()
+    IEnumerator FlashCantAfford()
     {
         if (deployText == null) yield break;
         deployText.color = Color.red;
         yield return new WaitForSeconds(0.3f);
-        deployText.color = new Color(1f, 1f, 1f, 0.3f);
+        deployText.color = new Color(1f, 1f, 1f, 0.4f);
     }
 }
