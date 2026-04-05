@@ -37,8 +37,7 @@ public class PlayerController : MonoBehaviour
         HandleBetterGravity();
         HandleShooting();
         HandleAllyDeploy(); // ADD THIS LINE
-        Debug.Log("isGrounded: " + isGrounded + " | GroundCheck Y: " + groundCheck.position.y);
-        // ... rest of your Update
+        
     }
 
     void HandleAllyDeploy()
